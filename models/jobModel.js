@@ -6,11 +6,7 @@ const jobSchema = new Schema({
         required : true,
         unique : true,
     },
-    jobDescription : {
-        type : String,
-        required : true,
-        unique : true,
-    },
+    
     email :{
         type : String,
         required : true,
@@ -20,64 +16,70 @@ const jobSchema = new Schema({
         type : String,
         required : true,
     },
-    Specialisms : {
-        type : Array,
-        require : true
-    },
-    jobtype : {
-        type : Array,
-        require : true
-    },
-    offeredSalary : {
-        type: Array,
-        require : true
-    },
-    careerLevel : {
-        type : Array,
-        require : true
-    },
-    experience : {
-        type : Array,
-        require : true
-    },
-    gender : {
-        type : Array,
-        require : true
-    },
-    industry : {
-        type : Array,
-        require : true
-    },
-    qualification : {
-        type : Array,
-        require : true
-    },
     applicationDeadlineDate : {
         type : Date,
         require : true
     },
-    country : {
+    Specialisms : {
         type : Array,
         require : true
     },
-    city : {
-        type : Array,
-        require : true
-    },
-    completeAddress : {
-        type : Array,
-        require : true
-    },
-    findOnMap : {
+    // jobtype : {
+    //     type : Array,
+    //     require : true
+    // },
+    // offeredSalary : {
+    //     type: Array,
+    //     require : true
+    // },
+    // careerLevel : {
+    //     type : Array,
+    //     require : true
+    // },
+    // experience : {
+    //     type : Array,
+    //     require : true
+    // },
+    // gender : {
+    //     type : Array,
+    //     require : true
+    // },
+    // industry : {
+    //     type : Array,
+    //     require : true
+    // },
+    // qualification : {
+    //     type : Array,
+    //     require : true
+    // },
+    
+    // country : {
+    //     type : Array,
+    //     require : true
+    // },
+    // city : {
+    //     type : Array,
+    //     require : true
+    // },
+    // completeAddress : {
+    //     type : Array,
+    //     require : true
+    // },
+    // findOnMap : {
+    //     type : String,
+    //     // require : true
+    // },
+    // latitude :{
+    //     type: String
+    // },
+    // longitude :{
+    //     type: String
+    // }
+    jobDescription : {
         type : String,
-        // require : true
+        required : true,
+        unique : true,
     },
-    latitude :{
-        type: String
-    },
-    longitude :{
-        type: String
-    }
 })
 
 const jobModel =  new model('Job', jobSchema)
