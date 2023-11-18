@@ -61,6 +61,7 @@ export const postaJob = async(req,res)=>{
             res.json(newJob)
         }
         catch(error){
+            console.log(error)
             res.status(500).json({
                 error : "Internal Server Error"
             })
