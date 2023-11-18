@@ -20,7 +20,7 @@ const jobSchema = new Schema({
         type : Date,
         require : true
     },
-    Specialisms : {
+    specialisms : {
         type : Array,
         require : true
     },
